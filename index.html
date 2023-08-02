@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plant Shop</title>
+
+    <!-- Style Sheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+
+    <!-- ------------------------------------------------------------------------------------------------ -->
+    <!-- Nav Bar -->
+
+    <nav class="navbar fixed-top">
+      <div class="container">
+        
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="assets/Logo.svg" alt="Logo" height="32">
+        </a>
+
+        <!-- Nav Items -->
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="browse.html">Browse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="wishlist.html">Wishlist</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <!-- ------------------------------------------------------------------------------------------------ -->
+    <!-- Carousel -->
+
+    <div id="carouselExample" class="carousel carousel-dark slide">
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row full-height">
+              <div class="col align-self-center">
+                <h1>Elevate Your Environment with Everlasting Beauty</h1>
+                <button class="mt-4">Browse Plants</button>
+              </div>
+              <div class="col align-self-end">
+                <img src="assets/hero-image.png" class="hero-image" id="hero-image">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row full-height">
+              <div class="col align-self-center">
+                <h1 class="heading">Explore how to care for your plants</h1>
+                <button class="mt-4">Viw Care Guide</button>
+              </div>
+              <div class="col align-self-end">
+                <img src="assets/hero-image 2.png" class="hero-image" id="hero-image">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    
+    <!--Accordion-->
+
+    <div class="accordion" id="accordionExample" >
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            How often should I water my plants?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Proper watering is essential for the health of your plants. The frequency of watering depends on various factors, including the type of plant, its size, environmental conditions, and the season. As a general guideline:
+
+            Check the soil: Before watering, stick your finger about an inch into the soil. If it feels dry, it's time to water. If it's still moist, wait a bit longer.
+            
+            Watering schedule: Most indoor plants require watering once every 1-2 weeks, while outdoor plants may need more frequent watering, especially in hot weather. However, always adjust the frequency based on your plant's specific needs.
+            
+            Be mindful of drainage: Ensure your plant pots have drainage holes to prevent waterlogging, which can lead to root rot.
+            
+            Consider the environment: Dry and warm conditions may require more frequent watering, whereas cooler or humid conditions may need less.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            How can I tell if my plant is getting enough light?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Light is crucial for photosynthesis and the overall growth of your plants. The signs of insufficient or excessive light can vary depending on the plant species, but here are some general guidelines:
+
+            Leaf color: If your plant's leaves appear pale or yellowish, it might not be getting enough light. On the other hand, if the leaves are turning brown or scorched, it could be receiving too much light.
+
+            Leggy growth: If your plant starts to stretch and grow tall and spindly, it's a sign of insufficient light. The plant is trying to reach for more light.
+
+            Flowering and growth: Lack of flowering or stunted growth can indicate inadequate light levels for flowering plants.
+
+            Observation: Pay attention to the number of hours of sunlight your plant receives each day. Most indoor plants prefer bright, indirect light, while some may tolerate low light conditions.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            How do I repot my plant, and when is it necessary?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Repotting is an important part of plant care that helps provide your growing plant with fresh nutrients and space for root expansion. Here's how and when to repot your plant:
+
+            Signs it's time to repot: If you notice the roots circling the pot's bottom, the plant outgrowing its current container, or the soil is depleted of nutrients, it's time to repot. Some plants may need repotting every 1-2 years, while others can go longer without repotting.
+
+            Choose the right pot: Select a pot that is 1-2 inches larger in diameter than the current one. Ensure it has drainage holes.
+
+            Repotting process: Gently remove the plant from its current pot and shake off excess soil. Prune any dead or unhealthy roots. Place fresh potting mix at the bottom of the new pot and position the plant at the same depth as before. Fill the sides with more potting mix and water thoroughly.
+
+            Post-repotting care: After repotting, avoid placing your plant in direct sunlight for a few days to minimize stress. Resume normal care routines once your plant adjusts to its new home.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
+
+  </body>
+</html>
